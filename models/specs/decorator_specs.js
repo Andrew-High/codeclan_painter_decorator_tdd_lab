@@ -24,11 +24,12 @@ describe('Decorator', function(){
         assert.strictEqual(actual, 1);
     });
 
-    // it('should be able to calculate total litres paint it has in stock', function(){
-    //     paintCan.empty();
-    //     const actual = paintCan.volume;
-    //     assert.strictEqual(actual, 0);
-    // });
+    it('should be able to calculate total litres paint it has in stock', function(){
+        decorator.addPaint(paintCan);
+        decorator.addPaint(paintCan);
+        const actual = decorator.calculateTotalPaintVolume;
+        assert.strictEqual(actual, 0);
+    });
 
     // it('should be able to calculate whether it has enough paint to paint a room', function(){
     //     paintCan.empty();
