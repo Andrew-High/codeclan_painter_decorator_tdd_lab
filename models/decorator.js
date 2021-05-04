@@ -1,6 +1,10 @@
 const Decorator = function(){
-    this.stock = 0;
+    this.stock = [];
 };
+
+Decorator.prototype.addPaint = function(paintCan){
+    this.stock.push(paintCan)
+}
 
 // Decorator.prototype.paintRoom = function(){
 //     this.painted = true;
