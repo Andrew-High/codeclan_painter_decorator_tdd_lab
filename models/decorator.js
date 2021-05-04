@@ -8,7 +8,7 @@ Decorator.prototype.addPaint = function(paintCan){
 
 Decorator.prototype.calculateTotalPaintVolume = function(){
     let totalPaint = 0;
-    for paintCan of this.stock {
+    for (let paintCan of this.stock) {
         totalPaint += paintCan.volume
     }
     return totalPaint;
