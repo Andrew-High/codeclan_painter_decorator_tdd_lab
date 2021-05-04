@@ -3,6 +3,10 @@ const Room = function(area, painted){
     this.painted = painted;
 };
 
+Room.prototype.paintRoom = function(){
+    this.painted = true;
+};
+
 
 
 
