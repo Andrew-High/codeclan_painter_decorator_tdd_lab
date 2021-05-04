@@ -22,7 +22,10 @@ describe('PaintCan', function(){
         assert.strictEqual(actual, 0);
     });
 
-    // it('should be able to empty itself of paint', function(){
-    //     const actual = room.area;
-    //     assert.strictEqual(actual, 10);
+    it('should be able to empty itself of paint', function(){
+        paintCan.empty();
+        const actual = paintCan.volume;
+        assert.strictEqual(actual, 0);
     });
+
+});
